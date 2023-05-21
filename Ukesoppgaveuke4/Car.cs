@@ -15,7 +15,7 @@ public class Car
         Odometer = odometer;
     }
 
-    public void DisplayCarDetails() //Displays the details of the book (title, author, genre, quantity).
+    public void DisplayCarDetails()
     {
         Console.WriteLine(
             $"Make: {Make}\nRegistrationNumber: {RegistrationNumber}\nYear: {Year}\nOdometer: {Odometer}\n");
