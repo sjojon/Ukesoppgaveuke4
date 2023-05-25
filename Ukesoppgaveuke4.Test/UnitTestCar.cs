@@ -2,11 +2,19 @@ namespace Ukesoppgaveuke4.Test
 {
     public class CarTest
     {
+        private Car car;
+
+        [SetUp]
+        public void Setup()
+        {
+            car = new("Toyota", "ABC123", 2010, 100000);
+        }
+
         [Test]
         public void TestCar()
         {
             // Arrange
-            Car car = new Car("Toyota", "ABC123", 2010, 100000);
+            //Car car = new Car("Toyota", "ABC123", 2010, 100000);
 
             // Act
             car.DisplayCarDetails();
@@ -23,7 +31,7 @@ namespace Ukesoppgaveuke4.Test
         [Test]
         public void TestUpdateMake()
         {
-            Car car = new Car("Toyota", "ABC123", 2010, 100000);
+            //Car car = new Car("Toyota", "ABC123", 2010, 100000);
             string newMake = "Mercedes";
 
             car.UpdateMake(newMake);
@@ -49,7 +57,7 @@ namespace Ukesoppgaveuke4.Test
         [Test]
         public void TestUpdateRegistrationNumber()
         {
-            Car car = new Car("Toyota", "ABC123", 2010, 100000);
+            //Car car = new Car("Toyota", "ABC123", 2010, 100000);
             string newRegistrationNumber = "CDE456";
 
             car.UpdateRegistrationNumber(newRegistrationNumber);
@@ -60,7 +68,7 @@ namespace Ukesoppgaveuke4.Test
         [Test]
         public void TestUpdateYear()
         {
-            Car car = new Car("Toyota", "ABC123", 2010, 100000);
+            //Car car = new Car("Toyota", "ABC123", 2010, 100000);
             int newYear = 2011;
 
             car.UpdateYear(newYear);
@@ -71,7 +79,7 @@ namespace Ukesoppgaveuke4.Test
         [Test]
         public void TestUpdateOdometer()
         {
-            Car car = new Car("Toyota", "ABC123", 2010, 100000);
+            //Car car = new Car("Toyota", "ABC123", 2010, 100000);
             int newOdometer = 150000;
 
             car.UpdateOdometer(newOdometer);
