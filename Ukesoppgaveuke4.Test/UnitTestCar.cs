@@ -7,7 +7,8 @@ namespace Ukesoppgaveuke4.Test
         [SetUp]
         public void Setup()
         {
-            car = new("Toyota", "ABC123", 2010, 100000);
+            // Litt enklere å bruke setUp enn å lage nytt objekt i hver test.
+            car = new Car("Toyota", "ABC123", 2010, 100000);
         }
 
         [Test]
