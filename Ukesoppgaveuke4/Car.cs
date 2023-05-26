@@ -69,7 +69,7 @@ public class Car
      * Denne standardimplementeringen sammenligner objektreferansene og returnerer true bare hvis
      * objektene refererer til samme minneadresse. I testen din ønsket du imidlertid å sammenligne
      * egenskapene til Car-objektene, ikke objektreferansene.
-
+     
      * Derfor måtte du tilpasse Equals-metoden i Car-klassen slik at den sammenligner egenskapene til bilene. 
      * Ved å implementere Equals-metoden på denne måten, kan du nå sammenligne to Car-objekter og få riktig
      * resultat basert på egenskapene de inneholder.
